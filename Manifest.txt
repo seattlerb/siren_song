@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/siren_song
+lib/siren_song.rb
+test/test_siren_song.rb

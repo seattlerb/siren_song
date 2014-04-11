@@ -25,21 +25,10 @@ class TestSirenSong < MiniTest::Unit::TestCase
     assert_equal exp, actual
 
     # siren = []
-    # def siren.play type
-    #   self << type
-    #   nil
+    # pusher = lambda { |x| siren << x; nil }
+    # Siren.stub :play, pusher do
+    assert_equal 2, eval(actual)
+    #   assert_equal [:ifc, :ift], siren
     # end
-    # Thread.current[:siren] = siren
-    # assert_equal [:ifc, :ift], siren
-
-    out = cleanup <<-OUT
-      Siren.play 1, :ifc
-      Siren.play 1, :ift
-
-    OUT
-
-    assert_output out do
-      assert_equal 2, eval(actual)
-    end
   end
 end

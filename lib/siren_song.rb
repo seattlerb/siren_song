@@ -1,8 +1,3 @@
-
-$: << "../../ruby_parser/3.0.0.a6/lib"
-$: << "../../sexp_processor/4.0.1/lib"
-$: << "../../ruby2ruby/2.0.0.b1/lib"
-
 require "rubygems"
 require "ruby_parser"
 require "sexp_processor"
